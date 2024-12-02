@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=3 uid="uid://ciass35iuepcb"]
+
+[ext_resource type="PackedScene" uid="uid://hr03li8ibbxb" path="res://card.tscn" id="1_p6ntc"]
+[ext_resource type="PackedScene" uid="uid://c8mdjcx0cvkww" path="res://slot.tscn" id="1_w53u4"]
+[ext_resource type="Texture2D" uid="uid://bn8ifoapot5so" path="res://assets/deck-of-cards/J7.png" id="3_p4q5y"]
+[ext_resource type="Texture2D" uid="uid://dx62ujgti7j3p" path="res://assets/deck-of-cards/10.7.png" id="4_6fpt5"]
+[ext_resource type="Texture2D" uid="uid://86hx08ysq7pv" path="res://assets/deck-of-cards/10.5.png" id="5_vdffo"]
+[ext_resource type="Texture2D" uid="uid://dpq0uxdx17bmo" path="res://assets/deck-of-cards/A.2.png" id="6_8nft1"]
+
+[node name="Main" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" parent="." instance=ExtResource("1_w53u4")]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 443.0
+offset_right = 142.0
+offset_bottom = 573.0
+bg_color = Color(0.721569, 0.164706, 0, 1)
+
+[node name="Card" parent="." instance=ExtResource("1_p6ntc")]
+layout_mode = 1
+offset_left = -213.0
+offset_top = 138.0
+offset_right = -145.0
+offset_bottom = 238.0
+card_texture = ExtResource("3_p4q5y")
+
+[node name="Card2" parent="." instance=ExtResource("1_p6ntc")]
+layout_mode = 1
+offset_left = -131.0
+offset_top = 138.0
+offset_right = -63.0
+offset_bottom = 238.0
+
+[node name="Card3" parent="." instance=ExtResource("1_p6ntc")]
+layout_mode = 1
+offset_left = -46.0
+offset_top = 138.0
+offset_right = 22.0
+offset_bottom = 238.0
+
+[node name="Card4" parent="." instance=ExtResource("1_p6ntc")]
+layout_mode = 1
+offset_left = 39.0
+offset_top = 135.0
+offset_right = 107.0
+offset_bottom = 235.0
+card_texture = ExtResource("4_6fpt5")
+
+[node name="Card5" parent="." instance=ExtResource("1_p6ntc")]
+layout_mode = 1
+offset_left = 129.0
+offset_top = 136.0
+offset_right = 197.0
+offset_bottom = 236.0
+card_texture = ExtResource("5_vdffo")
+
+[node name="Card6" parent="." instance=ExtResource("1_p6ntc")]
+layout_mode = 1
+offset_left = 303.0
+offset_top = 138.0
+offset_right = 371.0
+offset_bottom = 238.0
+
+[node name="Card7" parent="." instance=ExtResource("1_p6ntc")]
+layout_mode = 1
+offset_left = 215.0
+offset_top = 139.0
+offset_right = 283.0
+offset_bottom = 239.0
+card_texture = ExtResource("6_8nft1")

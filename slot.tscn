@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8mdjcx0cvkww"]
+
+[ext_resource type="Script" path="res://slot.gd" id="1_x5ues"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dm0ud"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="PanelContainer" type="PanelContainer"]
+clip_contents = true
+offset_right = 80.0
+offset_bottom = 110.0
+pivot_offset = Vector2(40, 55)
+theme_override_styles/panel = SubResource("StyleBoxFlat_dm0ud")
+script = ExtResource("1_x5ues")
+slot_text = "[wave amp=50.0 freq=4.5 connected=1]Discard    Card[/wave]"
+bg_color = Color(0, 0.815686, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+color = Color(0.427451, 0.423529, 0.443137, 0.658824)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.5
+offset_top = -30.0
+offset_right = 32.5
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "  Place
+ Holder"
+threaded = true
