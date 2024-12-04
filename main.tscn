@@ -16,63 +16,73 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" parent="." instance=ExtResource("1_w53u4")]
-layout_mode = 0
-offset_left = 62.0
-offset_top = 443.0
-offset_right = 142.0
-offset_bottom = 573.0
+[node name="Slot" parent="." instance=ExtResource("1_w53u4")]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 75.0
+offset_top = -196.0
+offset_right = 155.0
+offset_bottom = -66.0
+grow_vertical = 0
+slot_type = 0
 bg_color = Color(0.721569, 0.164706, 0, 1)
+rotation_tilt = 2.1
+tilt_duration = 0.105
 
 [node name="Card" parent="." instance=ExtResource("1_p6ntc")]
 layout_mode = 1
-offset_left = -213.0
-offset_top = 138.0
-offset_right = -145.0
-offset_bottom = 238.0
+offset_left = 292.0
+offset_top = 461.0
+offset_right = 360.0
+offset_bottom = 561.0
 card_texture = ExtResource("3_p4q5y")
 
 [node name="Card2" parent="." instance=ExtResource("1_p6ntc")]
 layout_mode = 1
-offset_left = -131.0
-offset_top = 138.0
-offset_right = -63.0
-offset_bottom = 238.0
+offset_left = 374.0
+offset_top = 461.0
+offset_right = 442.0
+offset_bottom = 561.0
 
 [node name="Card3" parent="." instance=ExtResource("1_p6ntc")]
 layout_mode = 1
-offset_left = -46.0
-offset_top = 138.0
-offset_right = 22.0
-offset_bottom = 238.0
+offset_left = 459.0
+offset_top = 461.0
+offset_right = 527.0
+offset_bottom = 561.0
+face_card_down = true
 
 [node name="Card4" parent="." instance=ExtResource("1_p6ntc")]
 layout_mode = 1
-offset_left = 39.0
-offset_top = 135.0
-offset_right = 107.0
-offset_bottom = 235.0
+offset_left = 544.0
+offset_top = 458.0
+offset_right = 612.0
+offset_bottom = 558.0
 card_texture = ExtResource("4_6fpt5")
+face_card_down = true
 
 [node name="Card5" parent="." instance=ExtResource("1_p6ntc")]
 layout_mode = 1
-offset_left = 129.0
-offset_top = 136.0
-offset_right = 197.0
-offset_bottom = 236.0
+offset_left = 634.0
+offset_top = 459.0
+offset_right = 702.0
+offset_bottom = 559.0
 card_texture = ExtResource("5_vdffo")
+face_card_down = true
 
 [node name="Card6" parent="." instance=ExtResource("1_p6ntc")]
 layout_mode = 1
-offset_left = 303.0
-offset_top = 138.0
-offset_right = 371.0
-offset_bottom = 238.0
+offset_left = 808.0
+offset_top = 461.0
+offset_right = 876.0
+offset_bottom = 561.0
 
 [node name="Card7" parent="." instance=ExtResource("1_p6ntc")]
 layout_mode = 1
-offset_left = 215.0
-offset_top = 139.0
-offset_right = 283.0
-offset_bottom = 239.0
+offset_left = 720.0
+offset_top = 462.0
+offset_right = 788.0
+offset_bottom = 562.0
 card_texture = ExtResource("6_8nft1")

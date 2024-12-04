@@ -14,10 +14,8 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [node name="PanelContainer" type="PanelContainer"]
-clip_contents = true
 offset_right = 80.0
 offset_bottom = 110.0
-pivot_offset = Vector2(40, 55)
 theme_override_styles/panel = SubResource("StyleBoxFlat_dm0ud")
 script = ExtResource("1_x5ues")
 slot_text = "[wave amp=50.0 freq=4.5 connected=1]Discard    Card[/wave]"
@@ -27,6 +25,7 @@ bg_color = Color(0, 0.815686, 0, 1)
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
+mouse_filter = 1
 color = Color(0.427451, 0.423529, 0.443137, 0.658824)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
@@ -43,7 +42,11 @@ offset_right = 32.5
 offset_bottom = 30.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 bbcode_enabled = true
 text = "  Place
  Holder"
 threaded = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
